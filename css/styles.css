@@ -27,10 +27,16 @@
 
 /* Общие стили */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: var(--main-text-color);
   background-color: var(--main-white-color);
   font-family: Roboto, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.03em;
@@ -46,16 +52,13 @@ body {
 
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .link {
   text-decoration: none;
 }
 
-.titles {
-  margin: 0;
+.title {
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -70,6 +73,7 @@ body {
 
 .logo {
   display: inline-block;
+  margin-right: 93px;
 
   color: var(--title-text-color);
   font-family: var(--second-font-family);
@@ -85,7 +89,6 @@ body {
 .list .link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -99,7 +102,6 @@ body {
 .connection {
   color: var(--footer-color);
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -116,7 +118,6 @@ body {
 
 .nav-pages {
   display: flex;
-  margin-left: 93px;
 }
 
 .nav-pages .item:not(:last-child) {
@@ -128,6 +129,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-connection {
   display: flex;
 }
@@ -155,7 +157,6 @@ body {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
   margin-bottom: 30px;
 
   color: var(--main-white-color);
@@ -168,6 +169,7 @@ body {
 .button-primary {
   display: inline-block;
   border: 4px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 200px;
   padding: 10px 32px;
@@ -202,20 +204,15 @@ body {
 }
 
 .advantages-title {
-  margin: 0;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
 .advantages-text {
-  margin: 0;
-
-  font-size: 14px;
   line-height: 1.71;
   text-align: left;
 }
@@ -246,6 +243,10 @@ body {
 }
 
 .our-service {
+  display: block;
+}
+
+.service-foto {
   display: block;
 }
 
@@ -281,7 +282,6 @@ body {
 }
 
 .team-member {
-  margin: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -291,7 +291,6 @@ body {
 }
 
 .team-specialization {
-  margin: 0;
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -318,16 +317,13 @@ body {
 }
 
 .address {
-  margin: 0;
   margin-bottom: 9px;
   color: var(--main-white-color);
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
 }
 
 .footer-connection {
-  margin: 0;
   margin-bottom: 9px;
 }
 
@@ -356,9 +352,14 @@ body {
 }
 
 .filter-button {
+  padding-left: 22px;
+  padding-right: 22px;
+
   color: var(--title-text-color);
   background-color: var(--background-button-color);
   border: none;
+  border-radius: 4px;
+
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -370,6 +371,8 @@ body {
 .filter-button:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*=== /Фильтр ===*/
@@ -412,8 +415,7 @@ body {
   border-right: 1px solid var(--card-border-color);
 }
 
-.project-titles {
-  margin: 0;
+.project-title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -423,7 +425,4 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project-category {
-  margin: 0;
-}
 /*=== /Проекты ===*/
